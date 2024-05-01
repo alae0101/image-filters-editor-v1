@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image filters editor</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+<div class="container">
+    <div class="img">
+        <div class="img-box">
+            <img id="img">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="upload">
+            <label for="upload">Uplaod</label>
+            <input type="file" id="upload">
+        </div>
+    </div>
+    <div class="filters">
+        <ul>
+            <li><label for="saturate">saturate</label><input id="saturate" type="range" min="0" max="200" value="100"  ></li>
+            <li><label for="contrast">contrast</label><input id="contrast" type="range" min="0" max="200" value="100"  ></li>
+            <li><label for="brightness">brightness</label><input id="brightness" type="range" min="0" max="200" value="100"  ></li>
+            <li><label for="sepia">sepia</label><input id="sepia" type="range" min="0" max="200" value="0"  ></li>
+            <li><label for="grayscale">grayscale</label><input id="grayscale" type="range" min="0" max="1" step="0.1" value="0.5" ></li>
+            <li><label for="blur">blur</label><input id="blur" type="range" min="0" max="10" step="0.1" value="0"  ></li>
+            <li><label for="hue-rotate">hue-rotate</label><input id="hue-rotate" type="range" min="0" max="350" value="0"  ></li>
+            <li><a download="image" id="download">Download</a> <span>reset</span></li>
+        </ul>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
